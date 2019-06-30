@@ -10,4 +10,4 @@ before_script:
 script: 
  pytest -s -q
 after_success:
- - ./travis/push.sh
+ - ./push.sh
