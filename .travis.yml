@@ -9,4 +9,5 @@ script:
  after_success:
  - sudo chown -R travis ./travis/push.sh
  - sudo chmod +x ./travis/push.sh
+ after_script:
  - ./travis/push.sh
