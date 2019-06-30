@@ -9,8 +9,8 @@ before_script:
  - sudo chmod +x ./push.sh
 script: 
  pytest -s -q
-after_success:
- if: commit_message = "Submit"
+if: commit_message = "Submit"
+ after_success:
  - git config --global user.email "sheilanasehi@gmail.org"
  - git config --global user.name "Sheila Nasehi"
  - git checkout master
