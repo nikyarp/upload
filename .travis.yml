@@ -5,8 +5,8 @@ python:
 install: 
  pip3 install --upgrade pip 
 before_script:
- - sudo chown -R travis ./travis/push.sh
- - sudo chmod +x ./travis/push.sh
+ - sudo chown -R travis ./push.sh
+ - sudo chmod +x ./push.sh
 script: 
  pytest -s -q
 after_success:
