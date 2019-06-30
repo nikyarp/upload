@@ -6,8 +6,7 @@ install:
  pip3 install --upgrade pip 
 script: 
  pytest -s -q
-after_script:
+ after_success:
  - sudo chown -R travis ./travis/push.sh
  - sudo chmod +x ./travis/push.sh
-after_success:
  - ./travis/push.sh
